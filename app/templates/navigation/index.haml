@@ -1,0 +1,31 @@
+.navigation
+
+  %ul.primary
+
+    %li.title
+      %span= @name
+
+    %li
+      %a{:href => '#', :class => 'first-level-one'} One
+
+    %li
+      %a{:href => '#', :class => 'first-level-two'} Two
+
+    %li.account
+      %a{:href => '#', :class => 'account'} Account
+
+  %ul.secondary.first-level-one
+    %li
+      %a{:href => '#/item1/'} Sub Item 1
+    %li
+      %a{:href => '#/item2/'} Sub Item 2
+
+  %ul.secondary.first-level-two
+    %li
+      %a{:href => '#/item3/'} Sub Item 3
+    %li
+      %a{:href => '#/item4/'} Sub Item 4
+
+  %ul.secondary.account
+    %li
+      %a{:href => '#/logout'} Log Out
